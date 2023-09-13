@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: whi;
+            display: grid;
+            grid-template-columns: 15vw 55vw 15vw 15vw;
+            grid-template-rows: 5vh 90vh 5vh;
+            grid-template-areas:
+               'top top top top'
+               'navbar context sidebar1 sidebar2'
+               'navbar foot foot foot'
+            ;
+        }
+        header, nav, main, aside,footer{
+            color: yellow;
+            font-size: large;
+            border: 1px solid black;
+        }
+        header{
+            grid-area: top;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        main{
+            grid-area: context;
+        }
+        aside{
+            grid-area: sidebar1 ,sidebar2;
+        }
+        footer{
+            grid-area: foot;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Navbar</nav>
+    <main>Context</main>
+    <aside>Sidebar 1</aside>
+    <aside>Sidebar 2</aside>
+    <footer>footer</footer>
+</body>
+</html>

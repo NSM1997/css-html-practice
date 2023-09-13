@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color:#05c46b;
+            font-family: Verdana;
+        }
+        form{
+            padding: 30px 20px ;
+            background-color: white;
+            width: 40vw;
+            margin:50px auto;
+        }
+        .headings{
+            text-align: left;
+            margin-bottom: 30px;
+        } 
+        .headings label{
+            display: inline-block;
+            margin-bottom: 5px;
+            padding: 5px;
+            text-align: left;
+        }
+        .headings input,.headings select, .headings textarea{
+            /* border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit; */
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+       input[type="radio"],input[type="checkbox"]{
+        display: inline-block;
+        width: auto;
+       }
+       input[type="submit"]{
+        background-color: #05c46b;
+        width: 95%;
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form>
+        <div class="headings">
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+        </div>
+
+        <div class="headings">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="headings">
+            <label>Age</label>
+            <input type="number" max="100" placeholder="Enter your age">
+        </div>
+
+        <div class="headings">
+            <label>Which Option best describes you?</label>
+            <select>
+                <option>Student</option>
+                <option>Working Professional</option>
+            </select>
+        </div>
+
+        <div class="headings">
+            <label>Would you recommend geeksforgeeks for your friend?</label>
+          <div><input type="radio" name="opt">
+            <label>Yes</label>
+        </div>
+
+        <div><input type="radio" name="opt">
+            <label>No</label>
+        </div>
+
+        <div><input type="radio" name="opt">
+            <label>Maybe</label>
+        </div>  
+        </div> 
+
+        <div class="headings">
+            <label>Languages and Frameworks known(Check all that apply)</label>
+           <div>
+            <input type="checkbox">
+            <label>Java</label>
+           </div>
+           <div>
+            <input type="checkbox">
+            <label>C</label>
+           </div>
+           <div>
+            <input type="checkbox">
+            <label>C++</label>
+           </div>
+           <div>
+            <input type="checkbox">
+            <label>C#</label>
+           </div>
+           <div>
+            <input type="checkbox">
+            <label>JavaScript</label>
+           </div>
+           <div>
+            <input type="checkbox">
+            <label>React</label>
+           </div>
+           <div>
+            <input type="checkbox">
+            <label>Native</label>
+           </div>
+            
+       
+            
+        </div>
+
+        <div class="headings">
+            <label>Any comments or suggestions</label>
+            <textarea placeholder="Enter your comments"></textarea>
+        </div>
+
+        <input type="submit" name="SUBMIT">
+    </form>
+</body>
+</html>
