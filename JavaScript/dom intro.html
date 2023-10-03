@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="btn-hello">Say Hello</button>
+    <button id="btn-bye">Say Bye</button> -->
+
+    <button>Say Hello</button>
+
+   <script>
+//    let btn= document.getElementsByClassName('btn')
+//     console.log(btn[0])
+
+    //  let btn=document.querySelector('.btn')  // query selector will traverse from top and select the 1st 
+     //element of type class and gives it as output and end 
+    //  let btn=document.querySelectorAll('.btn')
+    //  console.log(btn)
+     // btn[0].innerHTML= "is where we can give inner html"
+
+     //Q1 on Clicking the Button append hello to the page
+      //The Document method querySelector() returns the first Element within 
+      //the document that matches the specified selector, 
+      //or group of selectors. If no matches are found, null is returned.
+
+        // let helloBtn=document.getElementById('btn-hello')
+        // helloBtn.addEventListener('click',function(event){
+        //     let para=document.createElement('p')
+        //     para.innerText="Hello"
+        //     let body=document.querySelector('body')
+        //     body.appendChild(para)  
+        // })
+        // let byeButton=document.getElementById('btn-bye')
+        // byeButton.addEventListener('click',function(event){
+        //     let div=document.createElement('div')
+        //     div.innerText="Bye"
+        //     let body=document.querySelector('body')
+        //     body.appendChild(div)
+        // })
+        let sayHello = document.getElementsByName('button')
+    sayHello.addEventListener('click',function(event){
+    let div=Document.createElement('div')
+    div.innerText='Hello'
+    let body=Document.querySelector('body')
+    body.appendChild(div)
+    })
+
+
+    
+     
+   </script>
+    
+
+</body>
+</html>
