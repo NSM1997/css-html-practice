@@ -110,11 +110,33 @@
     </div>
     <script>
       // Q Make the filter work
-        let opt = document.querySelector('select')
-        opt.addEventListener('change',function(event){
-            let filterValue=opt.value;
-            console.log(filterValue)
-        })
+      let selectTag = document.querySelector('select')
+
+selectTag.addEventListener('change', function(event) {
+  let filterValue = selectTag.value;
+  console.log(filterValue)
+
+  // if "none" is selected -> display all divs
+  // else -> display only those divs with matching genre
+  let tickets = document.querySelectorAll('.price')
+  if (filterValue === 'none') {
+    tickets.forEach(ticket => {
+      ticket.parentElement.style.display = 'block'
+    })
+  } else {
+    tickets.forEach(function(ticket) {
+      let ticketCategory = ticket.getAttribute("data-category");
+      if (filterValue === ticketCategory) {
+        // show the div
+        ticket.parentElement.style.display = 'block'
+
+      } else {
+        //hide the div
+        ticket.parentElement.style.display = 'none'
+      }
+    })
+  }
+})
     </script>
   </body>
 </html>

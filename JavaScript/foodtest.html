@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let foodItems=`[
+        {
+        // key value should be always in double quotes.
+        "name":"pav bhaji",
+        "price":100,
+        "isAvailable": true
+    },
+    {
+        // key value should be always in double quotes.
+        "name":"ice cream",
+        "price":100,
+        "isAvailable": true
+    }
+]`
+let foodItemsJson=JSON.parse(foodItems)
+console.log(foodItemsJson)
+console.log(foodItems)
+    </script>
+    
+</body>
+</html>
