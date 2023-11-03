@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+             min-height: 200px; 
+             padding: 10px;
+             border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+</body>
+<script>
+    let grandparent = document.querySelector('.grandparent');
+    let parent = document.querySelector('.parent');
+    let child = document.querySelector('.child');
+
+    grandparent.addEventListener('click',event=>{
+        //event.preventDefault();
+        console.log("Grandparent is clicked",event.eventPhase);
+    },true)
+    parent.addEventListener('click',event=>{
+        //event.preventDefault();
+        console.log("parent is clicked",event.eventPhase);
+    },true)
+    child.addEventListener('click',event=>{
+        //event.preventDefault();
+        console.log("child is clicked",event.eventPhase);
+    },true)
+    grandparent.addEventListener('click',event=>{
+        //event.preventDefault();
+        console.log("Grandparent is clicked",event.eventPhase);
+    })
+    parent.addEventListener('click',event=>{
+        //event.preventDefault();
+        console.log("parent is clicked",event.eventPhase);
+    })
+    child.addEventListener('click',event=>{
+        //event.preventDefault();
+        console.log("child is clicked",event.eventPhase);
+    })
+</script>
+</html>
