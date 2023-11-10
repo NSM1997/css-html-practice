@@ -14,4 +14,15 @@ stars.addEventListener('click',event=>{
     }
     ratingCount.innerText=clickedStar;
 })
+stars.addEventListener('mouseover',event=>{
+    let clickedStar = event.target.dataset.index;
+
+    for(let i=0;i<allStars.length;i++){
+        allStars[i].classList.remove('active');
+    }
+    for(let i=0;i<clickedStar;i++){
+        allStars[i].classList.add('active');
+    }
+    ratingCount.innerText=clickedStar;
+})
 

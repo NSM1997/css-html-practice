@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="normal" placeholder="normal">
+    <input type="text" class="debouncing" placeholder="debouncing">
+    <input type="text" class="throttling" placeholder="throttling">
+</body>
+<script>
+    let inputFieldNormal = document.querySelector('.normal')
+    let inputFieldDebouncing = document.querySelector('.debouncing')
+    let inputFieldThrottling = document.querySelector('.throttling')
+
+    function getItemsRecommendationNormal() {
+        let searchText = inputFieldNormal.value
+        console.log(`GET items for ${searchText}`)
+    }
+
+    function getItemsRecommendationDebouncing() {
+        let searchText = inputFieldDebouncing.value
+        console.log(`Debounce :: GET items for ${searchText}`)
+    }
+
+    function getItemsRecommendationThrottling() {
+        let searchText = inputFieldThrottling.value
+        console.log(`Throttle :: GET items for ${searchText}`)
+    }
+
+    // Debouncing
+    function debounce(func, delay) {
+        let timerId
+        // console.log("Im called")
+
+        const debouncedSearch = () => {
+            // implement debouncing
+            clearTimeout(timerId)
+
+            timerId = setTimeout(function() {
+                func()
+            }, delay)
+        }
+
+        return debouncedSearch
+    }
+
+    // Throttling
+    function throttle(func, delay) {
+        let flag = true
+
+        const throttleSearch = () => {
+            if (flag) {
+                func()
+                flag = false
+
+                setTimeout(function() {
+                    flag = true
+                }, delay)
+            }
+        }
+
+        return throttleSearch
+    }
+
+    let autocompleteNormal = getItemsRecommendationNormal
+    let autocompleteDebouncing = debounce(getItemsRecommendationDebouncing, 3000)
+    let autocompleteThrottling = throttle(getItemsRecommendationThrottling, 3000)
+
+    inputFieldNormal.addEventListener('keyup', autocompleteNormal);
+    inputFieldDebouncing.addEventListener('keyup', autocompleteDebouncing);
+    inputFieldThrottling.addEventListener('keyup', autocompleteThrottling);
+
+</script>
+</html>
