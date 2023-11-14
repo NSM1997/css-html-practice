@@ -1,6 +1,13 @@
+body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
 .mainImage{
-    width:100%;
-    height: 100%;
+    width:100vw;
+    height: 57vh;
+    background-image: url("./assets/images/BackGround.png");
+    background-repeat: no-repeat;
 }
 .leftNav{
     color: white;
@@ -22,7 +29,7 @@
 .centralPart{
     position: absolute;
     display: flex;
-    top:10rem;
+    top:7rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -49,19 +56,64 @@ font-style: italic;
 }
 .searchAndFitlerBar{
     background-color: white;
+    border-radius: 7px;
     margin: 25px 0px;
     width: 110%;
     height: 2.5rem;
     display: flex;
     flex-direction:row;
-    
+    align-items: center;
+    justify-content: space-between;
 }
 .Filter{
     display: flex;
+    width: 23%;
     flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
 }
 .Search{
     display: flex;
     flex-direction: row;
-    margin-right: 0px;
+    width: 62%;
+    margin-right: 1rem;
+    align-items: center;
+    
+}
+#searchSpace{
+    margin-left: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: lighter;
+}
+.adds{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 40vh;
+  justify-content: center;
+  column-gap: 13px;
+}
+.orderOnline{
+    display: flex;
+    flex-direction: column;
+}
+.orderOnlineLogo{
+    background-image: url("./assets/images/Online-Food.png");
+    height: 10rem;
+    width: 15rem;
+    background-size: cover;
+}
+.diningLogo{
+    background-image: url("./assets/images/Dine-Out.png");
+    background-size: cover;
+    height: 10rem;
+    width: 15rem;
+}
+.nightLifeLogo{
+    background-image: url("./assets/images/Night-Life.png");
+    background-size: cover;
+    height: 10rem;
+    width: 15rem;
 }
