@@ -1,12 +1,12 @@
 let numbers=[1,2,3,4,5]
 
-// //map function
-// let squareOfNumber=numbers.map(function(number,index){
-//     console.log("Number is : ",  number)
-//     console.log("Index is : " ,index)
-//     return number*number
-// })
-// console.log(squareOfNumber)
+//map function
+let squareOfNumber=numbers.map(function(number,index){
+    console.log("Number is : ",  number)
+    console.log("Index is : " ,index)
+    return number*number
+})
+console.log(squareOfNumber)
 
 // let transaction =[100,-200,300,400,-500,600]
 
@@ -46,13 +46,13 @@ let numbers=[1,2,3,4,5]
 
 
 //function chaining 
-let transaction =[100,-200,300,400,-500,600]
+// let transaction =[100,-200,300,400,-500,600]
 
-let CreditTransactionInUSD=transaction.map(function(transaction){
-                  return transaction/82
-}).filter(function(transactionInUSD){
-         return transactionInUSD>0 
-});
-console.log(CreditTransactionInUSD)
+// let CreditTransactionInUSD=transaction.map(function(transaction){
+//                   return transaction/82
+// }).filter(function(transactionInUSD){
+//          return transactionInUSD>0 
+// });
+// console.log(CreditTransactionInUSD)
 
 

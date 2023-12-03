@@ -1,28 +1,28 @@
-// function myFunc(){
-//     console.log("inside my func");
-// }
+function myFunc(){
+    console.log("inside my func");
+}
 
-// myFunc()
+myFunc()
 
 //Traditional way
-// function myFunc(name){
-//     // console.log(name + " inside my func");
-//     console.log(`${name} Func`)
-// }
-// myFunc("Sai")
+function myFunc(name){
+    console.log(name + " inside my func");
+    console.log(`${name} Func`)
+}
+myFunc("Sai")
 
  //2nd way to declare
-//  let func2=function(){
-//     console.log("hello there")
-//  }
+ let func2=function(){
+    console.log("hello there")
+ }
 
-//  func2()
+ func2()
 
 // Arrow functions
 let func3= () =>{
 console.log("Hi its me")
 }
-// func3()
+func3()
 
 let square=(A)=>{
     console.log(A*A)

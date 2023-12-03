@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+}
+.container{
+    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./assets/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+h1{
+    color: white;
+    font-family:'Roboto', sans-serif;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+p{
+    color: slategray;
+    margin-top: 1.5rem;
+}
+.input{
+    padding-top: 1.5rem;
+}
+.inputText{
+    height: 1.8rem;
+    color: slategray;
+    border: 1px solid grey;
+    background-color: black;
+    border-radius: 5px;
+    width: 13rem;
+    padding-left: 10px;
+    font-stretch:ultra-expanded;
+    font-weight: 500;
+    font-size:small;
+}
+button{
+    height: 2rem;
+    width: 4.2rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+    background-color: rgb(75, 210, 165);
+    color: white;
+    font-weight: bolder;
+    font-size:smaller;
+}
+.icons{
+   justify-content: flex-end;
+}
