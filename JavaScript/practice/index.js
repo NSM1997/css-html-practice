@@ -141,12 +141,22 @@ let arr=[4,6,1,3,2,5];
 
 //closures
 
-function parent(x){
-    function child(y){
-        return x+y;
-    } 
-    return child;
-}
-let closure = parent(5);
-let ans = closure(3);
-console.log(ans);
+// function parent(x){
+//     function child(y){
+//         return x+y;
+//     } 
+//     return child;
+// }
+// let closure = parent(5);
+// let ans = closure(3);
+// console.log(ans);
+
+
+// function a(){
+//     for(var i=0;i<3;i++){
+//         setTimeout(function log(){
+//             console.log(i);
+//         },i*1000);
+//     }
+// }
+// a()
