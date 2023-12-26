@@ -15,8 +15,8 @@ function App() {
    <UserProfile name ='Manohar' age='26' company='Capgemini'/> */}
    {/* <Counter /> */}
    {/* <Products /> */}
-   {/* <Form /> */}
-   <Multipleinputform />
+   <Form />
+   {/* <Multipleinputform /> */}
     </div>
   );
 }
