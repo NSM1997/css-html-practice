@@ -22,9 +22,9 @@ function App() {
       {/* <Context.Provider value={familyDetails}>
         <FamilyContext />
       </Context.Provider> */}
-      {/* <Reference /> */}
+      <Reference />
       {/* <Form /> */}
-      <Memo1 />
+      {/* <Memo1 /> */}
     </div>
   );
 }
