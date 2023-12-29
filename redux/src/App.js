@@ -6,11 +6,12 @@ import Cart from './pages/Cart';
 import Home from './pages/Home';
 import { Provider } from 'react-redux';
 import store from './store/store'
+import Mock from './components/Mock';
 
 function App() {
   return (
     <div className="App">
-      <Provider store={store}>
+      {/* <Provider store={store}>
         <BrowserRouter>
           <Navbar />
           <Routes>
@@ -22,7 +23,8 @@ function App() {
             ></Route>
           </Routes>
         </BrowserRouter>
-      </Provider>
+      </Provider> */}
+      <Mock />
     </div>
   );
 }
