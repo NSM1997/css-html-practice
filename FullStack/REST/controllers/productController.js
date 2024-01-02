@@ -1,5 +1,5 @@
 const fs = require('fs');
-const data = JSON.parse(fs.readFileSync('C:/Users/SAINANDU/OneDrive-Capgemini/Documents/VsCode/FullStack/REST/data.json','utf-8'));
+const data = JSON.parse(fs.readFileSync('D:/VsCode/css-html-practice/FullStack/REST/data.json','utf-8'));
 
 const getAllProducts = (req,res)=>{
     res.send(data)

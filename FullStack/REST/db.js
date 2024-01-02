@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const PASSWORD = require('./credentials').PASSWORD
 
-const db= `mongodb+srv://NSMANOHAR:${PASSWORD}@manu.amvmctt.mongodb.net/?retryWrites=true&w=majority`
+const db= `mongodb+srv://NSMANOHAR:${PASSWORD}@manu.amvmctt.mongodb.net/LLD?retryWrites=true&w=majority`
 mongoose.connect(db,{
     useNewUrlParser: true,
     useUnifiedTopology: true
